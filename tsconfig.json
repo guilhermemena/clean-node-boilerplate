@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "outDir": "dist", // Define onde os arquivos js irão ser criados
+    "rootDir": "src", // Avisar o diretório raiz
+    "target": "es2021", // Define para qual versão do js o typescript deve transpilar
+    "sourceMap": true, // Serve para depurar um arquivo, debugger
+    "skipLibCheck": true, // Importante para performance, evita checks desnecessários dentro da node_modules
+    "forceConsistentCasingInFileNames": true, // Evita problemas de import com casing diferente
+    "module": "commonjs", // Permite passar somente o nome da pasta e ele importa o index dentro dela
+    "moduleResolution": "node", // Permite passar somente o nome da pasta e ele importa o index dentro dela
+    "esModuleInterop": true, // Resolver problemas de incompatibilidade, algumas libs usam require outras import, etc...
+    "baseUrl": "src", // Usar para absolutes imports
+    "paths": {
+      "@/*": ["*"],
+      "@/tests/*": ["../tests/*"]
+    },
+    "strict": true, // Habilita todo o modo strict
+    "strictNullChecks": true, // Tem que explicitamente avisar o código se algo é opcional ou nulo
+    "strictFunctionTypes": true, // Avisa caso a interface não está implementada de acordo
+    "strictPropertyInitialization": true, // Obriga a inicializar todas as variáveis de uma classe
+    "noImplicitAny": true // Evitar que alguma variável seja do tipo any implicitamente
+  },
+  "include": ["src"] // Incluir todos os arquivos desta pasta dentro do dist quando fizer o build
+}
