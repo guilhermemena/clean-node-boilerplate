@@ -20,5 +20,5 @@
     "strictPropertyInitialization": true, // Obriga a inicializar todas as variáveis de uma classe
     "noImplicitAny": true // Evitar que alguma variável seja do tipo any implicitamente
   },
-  "include": ["src"] // Incluir todos os arquivos desta pasta dentro do dist quando fizer o build
+  "include": ["src", "tests"] // Incluir todos os arquivos desta pasta dentro do dist quando fizer o build
 }
