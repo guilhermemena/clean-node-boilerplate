@@ -10,7 +10,8 @@
     "test": "jest --passWithNoTests --no-cache --runInBand",
     "test:watch": "npm test -- --watch",
     "test:staged": "npm test -- --findRelatedTests",
-    "test:coverage": "npm test -- --coverage"
+    "test:coverage": "npm test -- --coverage",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "@types/jest": "^27.0.1",
@@ -24,6 +25,7 @@
     "eslint-plugin-node": "11",
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-promise": "4",
+    "husky": "^7.0.1",
     "jest": "^27.0.6",
     "lint-staged": "^11.1.2",
     "prettier": "^2.3.2",
